@@ -1,0 +1,370 @@
+/* tamaño de 1024px de ancho */
+
+/*------------- Desktop hacia tablet--------------- */
+
+@media screen and (max-width: 1024px){
+
+
+
+/* Navbar */
+header {
+
+    .navbar-o{
+        display:none;
+    }
+
+    .bootnav{
+        display:flex;
+        width: 100%;
+        background-color:nth($list: $general-colors, $n:1 );
+        color:nth($list: $general-colors, $n: 2);
+        font-family: 'Times New Roman', Times, serif;
+        font-size:1.2em;
+
+        .navbar{
+            .container-fluid{
+                .navbar-brand{
+                    .logo{
+                        width: 3.5rem;
+                        height: 3.8rem;
+                        padding: 0;
+                    }
+                }
+
+                .navbar-toggler{
+                    background-color:nth($list: $general-colors, $n:2 );
+                }
+            }
+        }
+
+        #menu{
+            .navbar-nav{
+                @include flex(row,center,center);
+                .nav-item{
+                    .nav-link{
+                        display:inline;
+                        padding:4px;
+                        color:nth($list: $general-colors, $n: 2);
+                        transition:0.5s;
+
+                        &:hover{
+                            background-color:nth($list: $general-colors, $n: 2);
+                            color:nth($list: $general-colors, $n:1 );
+                            border-radius: 25px;
+                            padding:3px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Footer */
+.footer{
+    .find{
+        iframe{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+/* Index */
+
+.intro{
+    .text-intro-container{
+        width:90%;
+        .text-intro{
+            width:90%;
+            text-align:justify;
+        }
+
+    }
+}
+
+.history{
+    .text-history-container{
+        width:90%;
+        .text-history{
+            width:90%;
+            text-align:justify;
+        }
+
+    }
+}
+
+
+
+/* Escuelas */
+    .schools{
+
+        .surf-school{
+
+            .school-container{
+                @include flex(column,center,center);
+
+                .school-parag{
+                    display:block;
+                    width: 80%;
+                }
+
+                .gallery{
+                    display:grid;
+                    grid-template-areas:
+                    "img1 img2"
+                    "img3 img3";
+                    grid-template-columns:repeat(2,1fr);
+                    grid-template-rows: repeat(2,auto);
+                    width:90vw;
+                    justify-items: center;
+                    justify-content: center;
+                    gap:0.3em;
+                    
+                }
+
+            }
+        }
+    }
+
+    .school-link-container{
+        margin: 0.3rem;
+        .school-link{
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+
+
+    /* Playas */
+
+    .beach{
+
+        .beach-container{
+
+            .beach-card{
+                width: 15rem;
+                height: 20.3rem;
+
+                div{
+                    h3{
+                        font-size:16px;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Equipo */
+    .prev-equip{
+        p{
+            font-size:14px;
+            margin:5px;
+        }
+    }
+
+    .board{
+        h2{
+            margin:14px;
+        }
+        p{
+            font-size:14px;
+            margin:5px;
+        }
+    
+    
+        .sboard{
+
+            flex-direction:column;
+
+            div{
+
+                div{
+
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+                div {
+                    overflow-x: hidden;
+                .surfboard{
+                    width: 15rem;
+                    height:17rem;
+                    margin:0px;
+                    }
+                }
+    
+            & :nth-child(odd) {
+                @include flex(column,center,center);
+                }
+
+            & :nth-child(even) {
+                @include flex(column,center,center);
+                }
+        }
+
+        }
+    
+
+    .neoprene {
+
+        h2{
+            text-align:center;
+        }
+        
+        p{
+            font-size:16px;
+            text-align:center;
+        }
+        h3{
+            text-align:center;
+        }
+
+        h4{
+            font-size: 20px;
+            text-align:center;
+        }
+
+    }
+
+        .accesories{
+            @include flex(column,center,center);
+            // display:flex;
+            // flex-direction:column;
+            // justify-content: center;
+            // align-items: center;
+
+            h2{
+                margin:20px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+        
+            .accesories-container{
+        
+                width:80%;
+                @include flex(column,center,center);
+                // flex-direction:column;
+                // justify-content: center;
+                // align-items: center;
+        
+                .accesories-card{
+                    width:20rem;
+                    overflow: hidden;
+                    display: inline-block;
+                    text-align: center;
+                    margin:1em;
+
+        
+                    img{
+                        width:100%;
+                        height:15rem;
+                        padding:2px;
+                        margin-top:2px;
+                        margin-bottom:2px;
+                    }
+                }
+            }
+        }
+
+    /* Contacto */
+
+/*Estilo de la pagina contacto*/
+
+.form{
+    @include flex(column,center,center);
+
+    .form-container{
+        background-image: url(../assets/image/contacto/olas-backg.jpg);
+        background-repeat: no-repeat;
+        background-size : cover;
+        border-radius: 25px;
+        width:20rem;
+        @include flex(column,center,center);
+        text-align: center;
+        padding:3px;
+        margin:7px;
+        color:#fff;
+        font-size: 0.7em;
+        
+        .data{
+            @include flex(column,center,center);
+            gap: 4px;
+            margin:7px;
+        }
+
+        .practice{
+            @include flex(column,center,center);
+        }
+        input{
+            border-radius: 25px;
+            padding:3px;
+        }
+        label{
+            border-radius: 25px;
+        }
+
+        .choose-board{
+            @include flex(column,center,center);
+            border-radius: 25px;
+            font-size: 0.7em;
+            }
+            legend{
+                margin:7px;
+                text-align: center;
+                font-size: 0.7em;
+            }
+            div{
+                @include flex(column,center,center);
+                gap:2px;
+                div{
+                @include flex(column,center,center);
+                }
+            }
+        }
+
+        .level{
+            margin: 5px;
+        }
+        .coment{
+            @include flex(column,center,center);
+            margin:10px;
+            textarea{
+                display:inline-block;
+                text-align: center;
+                width:30vw;
+                height: 30vh;
+                @extend input;
+            }
+        }
+
+        .btn-form{
+            border-radius:15px;
+            padding:3px;
+            margin: 5px;
+        }
+
+        p{
+            font-size: 0.7em;
+        }
+
+    }
+
+
+
+
+
+
+} //fin responsive
+
+
+/* --------------------------------------------- */

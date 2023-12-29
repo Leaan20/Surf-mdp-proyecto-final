@@ -1,0 +1,7 @@
+body{
+    //background-color:nth($list: $general-colors, $n: 4);
+    background-image: radial-gradient($body-gradient,nth($list:$general-colors, $n:4));
+    font-family:$primary-font;
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+
+// Disposicion de elementos con Flex:
+
+@mixin flex ($flex-direction,$justify-content,$align-items){
+    display:flex;
+    flex-direction: $flex-direction;
+    justify-content:$justify-content;
+    align-items: $align-items;
+}
+
+// tamaño img en seccion escuelas
+
+@mixin img-grid {
+    width:15rem;
+    height:15rem;
+    transition-duration:0.5s;
+}
+

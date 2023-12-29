@@ -1,0 +1,34 @@
+// Imports
+
+// utilities
+@import './utilities/list';
+@import './utilities/mixin';
+@import './utilities/var';
+
+// Generales
+@import './base/fonts';
+@import './base/reset';
+@import './layout/header';
+@import './layout/carrousel';
+@import './layout/body';
+@import './layout/footer';
+
+// Pages
+@import './pages/index';
+@import './pages/playas';
+@import './pages/escuelas';
+@import './pages/equipo';
+@import './pages/contacto';
+
+
+
+// Media
+@import './layout/media-tablet';
+@import './layout/media-mobile';
+
+
+
+
+
+
+

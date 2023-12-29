@@ -1,0 +1,1169 @@
+@charset "UTF-8";
+/* fuentes */
+@font-face {
+  font-family: "akkurat";
+  src: url(../assets/fonts/Akkurat.ttf);
+}
+@font-face {
+  font-family: "athletic";
+  src: url(../assets/fonts/New\ Athletic\ M54.ttf);
+}
+/*Reset universal*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; /* con esta propiedad mi caja mantiene el ancho y alto que fije y que el padding y el border no se vayan del tamano dado a la caja*/
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Estilos generales*/
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf0ca;
+  font-family: "akkurat", Times, serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*--------------------HEADER---------------------------*/
+/*Estructura y diseño del header-navbar*/
+.bootnav {
+  display: none;
+}
+
+/* navbar con flex */
+.navbar-o {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  text-align: end;
+  background-color: #05223D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  /*logo navbar*/
+}
+.navbar-o a .logo {
+  width: 4rem;
+  height: 4rem;
+}
+.navbar-o ul li {
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 0;
+}
+.navbar-o ul li a {
+  padding: 2px;
+  color: #EE964B;
+  transition: 0.5s;
+}
+.navbar-o ul li a:hover {
+  background-color: #EE964B;
+  color: #05223D;
+  border-radius: 25px;
+  padding: 3px;
+}
+
+/*Estilo del carousel*/
+.carousel-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+body {
+  background-image: radial-gradient(#EDEDAA, #F5EFBF);
+  font-family: "akkurat", Times, serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*--------------------FOOTER---------------------------*/
+/*Estilo y estructura del footer*/
+.footer {
+  background-color: #ffba42;
+  font-family: "athletic";
+  font-size: 0.8em;
+}
+.footer .social {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .social .socialIcon {
+  display: inline-block;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  transition-duration: 0.5s;
+}
+.footer .social .socialIcon:hover {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition-duration: 0.5s;
+}
+.footer .find {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.2em;
+  overflow: hidden;
+}
+.footer .find iframe {
+  width: 400px;
+  height: 300px;
+}
+.footer .copyr {
+  text-align: center;
+  margin: 5px;
+}
+
+/*-----------------------INDEX-------------------------*/
+/*Estilo de la pagina Index*/
+h1 {
+  text-align: center;
+}
+
+/*section intro*/
+.intro, .intro .text-intro-container {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro .lele {
+  width: 21rem;
+  height: 16.5rem;
+  margin: 5px;
+  border-radius: 25px;
+}
+.intro .text-intro-container {
+  width: 50%;
+  margin: 5px;
+  padding: 7px;
+}
+.intro .text-intro-container .text-intro {
+  text-align: justify;
+}
+
+/*section history*/
+.history, .history .text-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.history h2, .history .text-history-container h2 {
+  text-align: center;
+}
+.history .text-history-container {
+  width: 80vw;
+}
+.history .text-history-container .text-history {
+  text-align: justify;
+  width: 80%;
+  margin: 2px;
+}
+.history .history-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-name: aparecer;
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.history .history-image .img-history {
+  width: 21rem;
+  height: 16rem;
+  margin: 0.5em;
+  border-radius: 25px;
+}
+
+/*---------------------------PLAYAS---------------------------*/
+/*Estilo de la pagina Playas*/
+.beach-p-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.beach-p-container p {
+  text-align: center;
+  width: 90%;
+}
+
+.beach h2 {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+.beach .beach-container {
+  display: grid;
+  gap: 0.7rem;
+  grid-auto-rows: 26rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 2fr));
+  justify-items: center;
+  align-items: center;
+}
+.beach .beach-container .beach-card {
+  width: 17rem;
+  height: 25rem;
+  margin: 17px;
+  border: 1px;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 6px 11px 13px -3px rgba(0, 0, 0, 0.6);
+  font-size: 0.8em;
+}
+.beach .beach-container .beach-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  transition-duration: 0.5s;
+}
+.beach .beach-container .beach-card img:hover {
+  scale: 1.1;
+  transition-duration: 0.9s;
+}
+.beach .beach-container .beach-card div h3 {
+  text-align: center;
+  color: #000;
+}
+.beach .beach-container .beach-card div p {
+  text-align: center;
+  padding: 7px;
+}
+
+.camera {
+  margin: 10px;
+  text-align: center;
+}
+.camera button {
+  font-family: "akkurat", Times, serif;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px groove #2a9;
+  padding: 8px;
+  border-radius: 30px;
+}
+.camera div button {
+  font-family: "akkurat", Times, serif;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px groove #2a9;
+  padding: 8px;
+  border-radius: 30px;
+}
+.camera div button p {
+  background-color: #000;
+  color: #fff;
+}
+.camera div p {
+  font-size: 0.8em;
+}
+.camera div div button a {
+  color: #fff;
+}
+
+/*-------------------------EQUIPO-----------------------*/
+/*Estilo de la pagina equipo*/
+/* Estilos de imagenes y textos seccion school*/
+.school-text-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.school-text-intro div {
+  width: 80%;
+}
+.school-text-intro div p {
+  width: 100%;
+  text-align: justify;
+}
+
+.schools {
+  margin: 1em;
+}
+.schools h2 {
+  margin: 0.5em;
+  color: #000;
+}
+.schools p {
+  margin: 0.5em;
+}
+.schools .surf-school {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.schools .surf-school .school-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+}
+.schools .surf-school .school-container .school-parag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 0.8rem;
+  padding: 3px;
+}
+.schools .surf-school .school-container .school-parag p {
+  font-size: 1em;
+  text-align: justify;
+  margin: 2rem;
+}
+.schools .surf-school .school-container .gallery {
+  display: grid;
+  grid-template-areas: "img1 img2" "img1 img3";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100vh;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 10px;
+}
+.schools .surf-school .school-container .gallery .img-school1 {
+  width: 15rem;
+  height: 15rem;
+  transition-duration: 0.5s;
+  grid-area: img1;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+.schools .surf-school .school-container .gallery .img-school2 {
+  width: 15rem;
+  height: 15rem;
+  transition-duration: 0.5s;
+  grid-area: img2;
+  object-fit: cover;
+}
+.schools .surf-school .school-container .gallery .img-school3 {
+  width: 15rem;
+  height: 15rem;
+  transition-duration: 0.5s;
+  grid-area: img3;
+  object-fit: cover;
+}
+.schools .surf-school .school-container .gallery .expand:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 10px 6px 35px -4px rgba(169, 194, 16, 0.75);
+  transition-duration: 0.5s;
+  padding: 0;
+  margin: 0;
+}
+
+.school-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+}
+.school-link-container .school-link {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.borja-channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9em;
+}
+.borja-channel .borja-video {
+  width: 560px;
+  height: 315px;
+}
+
+/*-------------------------EQUIPO-----------------------*/
+/*Estilo de la pagina equipo*/
+/* Estilos de imagenes y textos seccion board */
+.prev-equip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prev-equip-container .prev-equip {
+  width: 80vw;
+}
+.prev-equip-container .prev-equip div {
+  display: flex;
+  justify-content: center;
+}
+.prev-equip-container .prev-equip div p {
+  font-size: 20px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.board div h2 {
+  font-size: 24px;
+  margin: 20px;
+}
+.board div p {
+  font-size: 20px;
+  margin: 10px;
+}
+.board .sboard div {
+  margin: 0.5em;
+}
+.board .sboard div .sboard-name {
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 0.8em;
+  padding: 2px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgb(0, 168, 253), rgb(91, 4, 149));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.board .sboard div p {
+  font-size: 1.2em;
+  margin: 0.8em;
+}
+.board .sboard div .surfboard {
+  width: 17rem;
+  height: 19rem;
+  margin: 10px;
+}
+.board .sboard :nth-child(odd) {
+  display: flex;
+  flex-direction: row;
+}
+.board .sboard :nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Estilos de imagenes y texto seccion neoprene */
+.neoprene {
+  display: flex;
+  flex-direction: column;
+}
+.neoprene h2 {
+  margin: 1em;
+}
+.neoprene p {
+  margin: 1em;
+  font-size: 1.2em;
+}
+.neoprene h3 {
+  margin: 1em;
+}
+.neoprene h4 {
+  margin: 5px;
+  text-indent: 5px;
+  text-decoration: underline;
+}
+.neoprene .suit {
+  margin: 10px;
+}
+.neoprene .zip {
+  margin: 10px;
+  overflow: hidden;
+}
+
+/* Estilos de imagenes y cards seccion accesories */
+.accesories h2 {
+  margin: 20px;
+}
+.accesories .accesories-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.accesories .accesories-container .accesories-card {
+  width: 20rem;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+.accesories .accesories-container .accesories-card img {
+  width: 100%;
+  height: 15rem;
+  padding: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/*estilos seccion surfshop*/
+.surfshop h2 {
+  margin: 1em;
+}
+.surfshop p {
+  margin: 1em;
+}
+.surfshop .surfshop-site {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 10px;
+}
+.surfshop .surfshop-site div img {
+  width: 12rem;
+  height: 10rem;
+}
+.surfshop .surfshop-site div a {
+  display: block;
+}
+.surfshop .surfshop-site div a:link {
+  color: #000;
+}
+.surfshop .surfshop-site div a:visited {
+  color: #f69;
+}
+
+/*---------------------CONTACTO------------------------*/
+/*Estilo de la pagina contacto*/
+.form-p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form .form-container {
+  background-image: url(../assets/image/contacto/olas-backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
+  margin: 7px;
+  color: #fff;
+  font-size: 0.9em;
+}
+.form .form-container .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+  font-size: 0.9em;
+}
+.form .form-container .practice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .form-container input, .form .form-container .coment textarea, .form .coment .form-container textarea {
+  border-radius: 25px;
+  padding: 3px;
+}
+.form .form-container label {
+  border-radius: 25px;
+}
+.form .form-container .choose-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 0.9em;
+}
+.form .form-container legend {
+  margin: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+.form .form-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.form .form-container div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form .level {
+  margin: 5px;
+}
+.form .coment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.form .coment textarea {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 150px;
+}
+.form .btn-form {
+  border-radius: 15px;
+  padding: 3px;
+  margin: 5px;
+  transition: 0.3s;
+}
+.form .btn-form:hover {
+  border: 2px solid #239;
+  color: #239;
+  background-color: #17181c;
+  transition: 0.3s;
+}
+.form p {
+  font-size: 0.9em;
+}
+
+/* tamaño de 1024px de ancho */
+/*------------- Desktop hacia tablet--------------- */
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  header .navbar-o {
+    display: none;
+  }
+  header .bootnav {
+    display: flex;
+    width: 100%;
+    background-color: #05223D;
+    color: #EE964B;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+  }
+  header .bootnav .navbar .container-fluid .navbar-brand .logo {
+    width: 3.5rem;
+    height: 3.8rem;
+    padding: 0;
+  }
+  header .bootnav .navbar .container-fluid .navbar-toggler {
+    background-color: #EE964B;
+  }
+  header .bootnav #menu .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header .bootnav #menu .navbar-nav .nav-item .nav-link {
+    display: inline;
+    padding: 4px;
+    color: #EE964B;
+    transition: 0.5s;
+  }
+  header .bootnav #menu .navbar-nav .nav-item .nav-link:hover {
+    background-color: #EE964B;
+    color: #05223D;
+    border-radius: 25px;
+    padding: 3px;
+    width: auto;
+  }
+  /* Footer */
+  .footer .find iframe {
+    width: 200px;
+    height: 200px;
+  }
+  /* Index */
+  .intro .text-intro-container {
+    width: 90%;
+  }
+  .intro .text-intro-container .text-intro {
+    width: 90%;
+    text-align: justify;
+  }
+  .history .text-history-container {
+    width: 90%;
+  }
+  .history .text-history-container .text-history {
+    width: 90%;
+    text-align: justify;
+  }
+  /* Escuelas */
+  .schools .surf-school .school-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .schools .surf-school .school-container .school-parag {
+    display: block;
+    width: 80%;
+  }
+  .schools .surf-school .school-container .gallery {
+    display: grid;
+    grid-template-areas: "img1 img2" "img3 img3";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 90vw;
+    justify-items: center;
+    justify-content: center;
+    gap: 0.3em;
+  }
+  .school-link-container {
+    margin: 0.3rem;
+  }
+  .school-link-container .school-link {
+    text-align: center;
+    font-size: 1em;
+  }
+  /* Playas */
+  .beach .beach-container .beach-card {
+    width: 15rem;
+    height: 20.3rem;
+  }
+  .beach .beach-container .beach-card div h3 {
+    font-size: 16px;
+  }
+  .beach .beach-container .beach-card div p {
+    font-size: 13px;
+  }
+  /* Equipo */
+  .prev-equip p {
+    font-size: 14px;
+    margin: 5px;
+  }
+  .board h2 {
+    margin: 14px;
+  }
+  .board p {
+    font-size: 14px;
+    margin: 5px;
+  }
+  .board .sboard {
+    flex-direction: column;
+  }
+  .board .sboard div div p {
+    font-size: 16px;
+  }
+  .board .sboard div {
+    overflow-x: hidden;
+  }
+  .board .sboard div .surfboard {
+    width: 15rem;
+    height: 17rem;
+    margin: 0px;
+  }
+  .board .sboard :nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .board .sboard :nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .neoprene h2 {
+    text-align: center;
+  }
+  .neoprene p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .neoprene h3 {
+    text-align: center;
+  }
+  .neoprene h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accesories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .accesories h2 {
+    margin: 20px;
+  }
+  .accesories p {
+    font-size: 16px;
+  }
+  .accesories .accesories-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .accesories .accesories-container .accesories-card {
+    width: 20rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+  }
+  .accesories .accesories-container .accesories-card img {
+    width: 100%;
+    height: 15rem;
+    padding: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  /* Contacto */
+  /*Estilo de la pagina contacto*/
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .form-container {
+    background-image: url(../assets/image/contacto/olas-backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    margin: 7px;
+    color: #fff;
+    font-size: 0.7em;
+  }
+  .form .form-container .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 7px;
+  }
+  .form .form-container .practice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .form-container input, .form .form-container .coment textarea, .form .coment .form-container textarea {
+    border-radius: 25px;
+    padding: 3px;
+  }
+  .form .form-container label {
+    border-radius: 25px;
+  }
+  .form .form-container .choose-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 0.7em;
+  }
+  .form .form-container legend {
+    margin: 7px;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  .form .form-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  .form .form-container div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .level {
+    margin: 5px;
+  }
+  .form .coment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .form .coment textarea {
+    display: inline-block;
+    text-align: center;
+    width: 30vw;
+    height: 30vh;
+  }
+  .form .btn-form {
+    border-radius: 15px;
+    padding: 3px;
+    margin: 5px;
+  }
+  .form p {
+    font-size: 0.7em;
+  }
+}
+/* --------------------------------------------- */
+/* tamaño de 768pxde ancho */
+/* --------------Tablet a mobile---------------- */
+@media screen and (max-width: 768px) {
+  /* Estilo general subtitulos y parrafos */
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  h3, h4 {
+    font-size: 0.85em;
+  }
+  p {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  /* Navbar */
+  header .bootnav .navbar {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  header .bootnav .navbar .container-fluid .navbar-brand .logo {
+    width: 3.5rem;
+    height: 3.8rem;
+    padding: 0;
+  }
+  header .bootnav #menu .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* index */
+  .intro .lele {
+    width: 14rem;
+    height: 10.5rem;
+    margin: 2px;
+  }
+  .intro .text-intro-container {
+    width: 90%;
+  }
+  .intro .text-intro-container .text-intro {
+    width: 100%;
+    text-align: justify;
+  }
+  .history .text-history-container {
+    width: 90%;
+    text-align: justify;
+  }
+  .history .text-history-container .text-history {
+    width: 100%;
+  }
+  .history .history-image .img-history {
+    width: 14rem;
+    height: 10.5rem;
+    margin: 2px;
+  }
+  /* Playas */
+  .beach .beach-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .beach .beach-container .beach-card {
+    width: 15rem;
+    height: 21.2rem;
+  }
+  .beach .beach-container .beach-card div h3 {
+    font-size: 15px;
+  }
+  .beach .beach-container .beach-card div p {
+    font: size 13px;
+  }
+  /* Equipo */
+  .board .sboard div div p {
+    font-size: 14px;
+  }
+  .neoprene p {
+    font-size: 14px;
+  }
+  .accesories .accesories-container .accesories-card {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 1px;
+  }
+  .accesories .accesories-container .accesories-card .p-container {
+    width: 100%;
+  }
+  .accesories .accesories-container .accesories-card .p-container p {
+    margin: 2px;
+    font-size: 16px;
+  }
+  /* Escuelas */
+  .schools {
+    margin: 1em;
+  }
+  .schools h2 {
+    margin: 0.5em;
+  }
+  .schools p {
+    margin: 0.5em;
+    font-size: 14px;
+  }
+  .schools .surf-school .school-container {
+    margin: 0.5 0 0.5 0;
+  }
+  .schools .surf-school .school-container .school-parag {
+    width: 80%;
+    margin: 0.6rem;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .schools .surf-school .school-container .school-parag p {
+    width: 100%;
+    font-size: 14px;
+    margin: 0.4rem;
+  }
+  .schools .surf-school .school-container .gallery {
+    display: grid;
+    grid-template-areas: "img1" "img2" "img3";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 90vw;
+    justify-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 0px;
+  }
+  .schools .surf-school .school-container .gallery .img-school1 {
+    width: 11rem;
+    height: 11rem;
+  }
+  .schools .surf-school .school-container .gallery .img-school2 {
+    width: 11rem;
+    height: 11rem;
+  }
+  .schools .surf-school .school-container .gallery .img-school3 {
+    width: 11rem;
+    height: 11rem;
+  }
+  .schools .surf-school .school-container .gallery .expand:hover {
+    width: 13rem;
+    height: 13rem;
+  }
+  .school-link-container {
+    margin: 0.3rem;
+  }
+  .school-link-container .school-link {
+    text-align: center;
+    font-size: 1em;
+  }
+  .borja-channel {
+    gap: 0.5 em;
+  }
+  .borja-channel .borja-video {
+    width: 250px;
+    height: 160px;
+  }
+  /* Contacto */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+  .form .form-container {
+    width: 15rem;
+  }
+  .form .form-container .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 7px;
+    font-size: 13px;
+  }
+  .form .form-container .choose-board {
+    font-size: 13px;
+  }
+  .form .form-container .choose-board legend {
+    font-size: 13px;
+  }
+  .form .form-container .coment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 13px;
+  }
+  .form .form-container .coment textarea {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+  }
+  .form .form-container p {
+    font-size: 13px;
+  }
+}
+/* ----------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */

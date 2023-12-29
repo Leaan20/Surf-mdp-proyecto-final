@@ -1,0 +1,59 @@
+/*--------------------HEADER---------------------------*/
+
+@import '../utilities/list';
+
+/*Estructura y diseño del header-navbar*/
+
+
+    .bootnav{
+        display: none;
+    }
+
+
+    /* navbar con flex */
+    .navbar-o{
+        font-family:$header-font;
+        font-size: 1.5em;
+        text-align: end;
+        background-color:nth($list: $general-colors, $n:1 );
+        @include flex(row,space-around,center);
+        gap:5px;
+        
+            /*logo navbar*/
+                a {
+                    .logo{
+                        width: 4rem;
+                        height: 4rem;
+    
+                    }
+                }
+    
+                ul{
+                    li{
+                    display: inline-block;
+                    margin:10px;
+                    margin-bottom: 0;
+    
+                        a{
+    
+                        padding:2px;
+                        color: nth($list: $general-colors, $n:2 );
+                        transition:0.5s;
+                            &:hover{
+                                background-color:nth($list: $general-colors, $n:2 ) ;
+                                color:nth($list: $general-colors, $n:1 );
+                                border-radius: 25px;
+                                padding:3px;
+                            }
+                        }
+                    }
+            }
+    }
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+/*-----------------------INDEX-------------------------*/
+
+/*Estilo de la pagina Index*/
+
+
+    h1{
+        text-align:center;
+    }
+
+    /*section intro*/
+
+    .intro{
+        margin:3px;
+        @include flex(column,center,center);
+
+        .lele{
+            width:21rem;
+            height:16.5rem;
+            margin:5px;
+            border-radius: 25px;
+        }
+        .text-intro-container{
+            @extend .intro;
+            width: 50%;
+            margin: 5px;
+            padding:7px;
+
+            // &:hover{
+            //     border-radius:15px;
+            //     box-shadow: 2px 0px 2px 0px #000;
+            //     background-image: linear-gradient(to right, #ffa, #ffb);
+            // }
+            .text-intro{
+                text-align:justify;
+            }
+
+        }
+
+    }
+
+    /*section history*/
+
+    .history{
+        @include flex(column,center,center);
+        h2{
+            text-align:center;
+        }
+
+        .text-history-container{
+            @extend .history;
+            width:80vw;
+
+            .text-history{
+                text-align: justify;
+                width:80%;
+                margin:2px;
+            }
+        }
+
+        .history-image{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0;
+
+            //prueba de animacion:
+            animation-name:aparecer;
+            animation-delay: 0.5s;
+            animation-duration:2.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            @keyframes aparecer{
+                0% {
+                    opacity: 0;
+                }
+
+                25%{
+                    opacity:0.3;
+                }
+
+                50%{
+                    opacity:0.5;
+                }
+
+                75%{
+                    opacity:0.7;
+                }
+
+                100%{
+                    opacity:1;
+                }
+            }
+
+            .img-history{
+                width:21rem;
+                height:16rem;
+                margin: 0.5em;
+                border-radius: 25px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+

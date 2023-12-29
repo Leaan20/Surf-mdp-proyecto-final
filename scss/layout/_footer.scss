@@ -1,0 +1,62 @@
+/*--------------------FOOTER---------------------------*/
+
+@import '../utilities/list';
+
+/*Estilo y estructura del footer*/
+
+.footer{
+    background-color:nth($list: $general-colors, $n:3 );
+    font-family:$footer-font;
+    font-size:0.8em;
+
+    .social{
+        margin: 0.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content:center;
+        gap:20px;
+
+            .socialIcon{
+                display: inline-block;
+                margin: 10px;
+                width:40px;
+                height: 40px;
+                transition-duration:0.5s ;
+
+                    &:hover {
+                    display: inline-block;
+                    width:50px;
+                    height: 50px;
+                    transition-duration: 0.5s;
+                    }
+            }
+
+        }
+
+    .find{
+        @include flex(column,start,center);
+        flex-wrap:wrap;
+        // display:flex;
+        // flex-flow:column wrap;
+        // align-items: center;
+        // justify-content: start;
+        margin-top: 0.2em;
+        overflow: hidden;
+
+            iframe{
+                width: 400px;
+                height: 300px;
+                }
+
+        }
+
+        .copyr {
+            text-align:center;
+            margin:5px;
+        }
+
+}
+
+
+

@@ -1,0 +1,98 @@
+/*---------------------CONTACTO------------------------*/
+
+/*Estilo de la pagina contacto*/
+
+.form-p{
+    font-size:1.3em;
+    text-align:center;
+}
+
+.form{
+    @include flex(row,center,center);
+
+    .form-container{
+        background-image: url(../assets/image/contacto/olas-backg.jpg);
+        background-repeat: no-repeat;
+        background-size : cover;
+        border-radius: 25px;
+        width:25rem;
+        @include flex(column,space-evenly,center);
+        text-align: center;
+        padding:3px;
+        margin:7px;
+        color:#fff;
+        font-size: 0.9em;
+
+        .data{
+            @include flex(row,center,center);
+            gap: 5px;
+            margin:10px;
+            font-size: 0.9em;
+        }
+
+        .practice{
+            @include flex(column,center,center);
+        }
+        input{
+            border-radius: 25px;
+            padding:3px;
+        }
+        label{
+            border-radius: 25px;
+        }
+
+        .choose-board{
+            @include flex(column,center,center);
+            border-radius: 25px;
+            font-size: 0.9em;
+            }
+            legend{
+                margin:10px;
+                text-align: center;
+                font-size: 0.9em;
+            }
+            div{
+                @include flex(column,center,center);
+                gap:2px;
+                div{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                }
+            }
+        }
+
+        .level{
+            margin: 5px;
+        }
+        .coment{
+            @include flex(column,center,center);
+            margin:10px;
+            textarea{
+                display:inline-block;
+                text-align: center;
+                width:50%;
+                height: 150px;
+                @extend input;
+            }
+        }
+
+        .btn-form{
+            border-radius:15px;
+            padding:3px;
+            margin: 5px;
+            transition:0.3s;
+
+            &:hover {
+                border:2px solid #239;
+                color:#239;
+                background-color:#17181c;
+                transition:0.3s;
+            }
+        }
+
+        p{
+            font-size: 0.9em;
+        }
+
+    }
