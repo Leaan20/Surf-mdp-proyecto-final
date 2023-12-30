@@ -128,15 +128,46 @@ header {
 
     /* Equipo */
 
+    .prev-equip-container{
+        .prev-equip{
+            div{
+                .prev-equip-parag{
+                font-size:14px;
+                margin:5px;
+                }
+            }
+        }
+    
+    }
+
+
     .board{
+        div{
+            .board-prev{
+                width:90%;
+                h2{
+                    font-size: 17px;
+                }
+
+                div{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
 
         .sboard{
 
             div{
 
                 div{
-
+                    width:90%;
+                    .sboard-name{
+                        font-size: 16px;
+                    }
                     p{
+                        text-align: justify;
                         font-size: 14px;
                     }
                 }
@@ -147,10 +178,63 @@ header {
 
     .neoprene {
 
-        
-        p{
-            font-size:14px;
+        h2{
+            font-size: 17px;
         }
+
+        div{
+            p{
+            font-size:14px;
+            }
+        }
+        h3{
+            font-size: 16px;
+        }
+
+        div{
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .neoprene-season{
+            width:90%;
+            border: 2px solid red;
+            h4{
+                font-size: 16px;
+            }
+            p{
+                font-size:14px;
+            }
+        }
+        
+            .suit{
+                margin:10px;
+                width: 90%;
+            }
+        
+            .neoprene-zip{
+                h3{
+                    margin: 0.3em;
+                }
+                
+                p{
+                    margin: 0.3em;
+                    font-size:14px;
+                }
+        
+                h4{
+                    text-align:center;
+                   font-size: 16px;
+                }
+            }
+        
+            .zip{
+                margin:10px;
+                width: 90%;
+            }
+
+
 
     }
 
@@ -170,7 +254,7 @@ header {
                     
                     p{
                         margin:2px;
-                        font-size:16px;
+                        font-size:14px;
                     }
                 }
             }

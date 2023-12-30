@@ -430,30 +430,47 @@ h1 {
   align-items: center;
 }
 .prev-equip-container .prev-equip {
-  width: 80vw;
+  width: 80%;
 }
 .prev-equip-container .prev-equip div {
   display: flex;
   justify-content: center;
 }
-.prev-equip-container .prev-equip div p {
-  font-size: 20px;
+.prev-equip-container .prev-equip div .prev-equip-parag {
+  font-size: 1.1em;
   margin: 10px;
   text-align: justify;
 }
 
-.board div h2 {
-  font-size: 24px;
+.board div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board div .board-prev {
+  width: 80%;
+}
+.board div .board-prev h2 {
+  font-size: 25px;
   margin: 20px;
 }
-.board div p {
-  font-size: 20px;
+.board div .board-prev div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board div .board-prev div p {
+  font-size: 1.1em;
   margin: 10px;
+  text-align: justify;
 }
 .board .sboard div {
   margin: 0.5em;
 }
-.board .sboard div .sboard-name {
+.board .sboard div div .sboard-name {
   display: inline-block;
   font-size: 1.4em;
   margin: 0.8em;
@@ -463,8 +480,8 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.board .sboard div p {
-  font-size: 1.2em;
+.board .sboard div div p {
+  font-size: 1.1em;
   margin: 0.8em;
 }
 .board .sboard div .surfboard {
@@ -485,28 +502,62 @@ h1 {
 .neoprene {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .neoprene h2 {
   margin: 1em;
 }
-.neoprene p {
+.neoprene div {
+  border: 2px solid blue;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.neoprene div p {
   margin: 1em;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .neoprene h3 {
   margin: 1em;
 }
-.neoprene h4 {
+.neoprene div p {
+  margin: 1em;
+  font-size: 1.1em;
+}
+.neoprene .neoprene-season {
+  width: 80%;
+  border: 2px solid red;
+}
+.neoprene .neoprene-season h4 {
   margin: 5px;
   text-indent: 5px;
   text-decoration: underline;
 }
+.neoprene .neoprene-season p {
+  margin: 1em;
+  font-size: 1.1em;
+}
 .neoprene .suit {
   margin: 10px;
+  width: 80%;
+}
+.neoprene .neoprene-zip h3 {
+  margin: 1em;
+}
+.neoprene .neoprene-zip p {
+  margin: 1em;
+  font-size: 1.1em;
+}
+.neoprene .neoprene-zip h4 {
+  margin: 5px;
+  text-indent: 5px;
+  text-decoration: underline;
 }
 .neoprene .zip {
   margin: 10px;
-  overflow: hidden;
+  width: 80%;
 }
 
 /* Estilos de imagenes y cards seccion accesories */
@@ -769,25 +820,29 @@ h1 {
     font-size: 16px;
   }
   .beach .beach-container .beach-card div p {
-    font-size: 13px;
+    font-size: 16px;
   }
   /* Equipo */
-  .prev-equip p {
-    font-size: 14px;
+  .prev-equip-container .prev-equip div .prev-equip-parag {
+    font-size: 17px;
     margin: 5px;
   }
-  .board h2 {
+  .board div .board-prev h2 {
+    font-size: 18px;
     margin: 14px;
   }
-  .board p {
-    font-size: 14px;
+  .board div .board-prev div p {
+    font-size: 17px;
     margin: 5px;
   }
   .board .sboard {
     flex-direction: column;
   }
+  .board .sboard div div {
+    width: 80%;
+  }
   .board .sboard div div p {
-    font-size: 16px;
+    font-size: 17px;
   }
   .board .sboard div {
     overflow-x: hidden;
@@ -812,16 +867,38 @@ h1 {
   .neoprene h2 {
     text-align: center;
   }
-  .neoprene p {
-    font-size: 16px;
+  .neoprene div p {
+    font-size: 17px;
     text-align: center;
   }
   .neoprene h3 {
     text-align: center;
   }
-  .neoprene h4 {
+  .neoprene .neoprene-season {
+    width: 80%;
+    border: 2px solid red;
+  }
+  .neoprene .neoprene-season h4 {
     font-size: 20px;
     text-align: center;
+  }
+  .neoprene .neoprene-season p {
+    font-size: 17px;
+    text-align: center;
+  }
+  .neoprene .suit {
+    margin: 10px;
+    width: 80%;
+  }
+  .neoprene .neoprene-zip h3 {
+    margin: 0.5em;
+  }
+  .neoprene .neoprene-zip p {
+    margin: 0.5em;
+    font-size: 17px;
+  }
+  .neoprene .zip {
+    margin: 5px;
   }
   .accesories {
     display: flex;
@@ -833,7 +910,7 @@ h1 {
     margin: 20px;
   }
   .accesories p {
-    font-size: 16px;
+    font-size: 17px;
   }
   .accesories .accesories-container {
     width: 80%;
@@ -1033,11 +1110,69 @@ h1 {
     font: size 13px;
   }
   /* Equipo */
-  .board .sboard div div p {
+  .prev-equip-container .prev-equip div .prev-equip-parag {
+    font-size: 14px;
+    margin: 5px;
+  }
+  .board div .board-prev {
+    width: 90%;
+  }
+  .board div .board-prev h2 {
+    font-size: 17px;
+  }
+  .board div .board-prev div p {
     font-size: 14px;
   }
-  .neoprene p {
+  .board .sboard div div {
+    width: 90%;
+  }
+  .board .sboard div div .sboard-name {
+    font-size: 16px;
+  }
+  .board .sboard div div p {
+    text-align: justify;
     font-size: 14px;
+  }
+  .neoprene h2 {
+    font-size: 17px;
+  }
+  .neoprene div p {
+    font-size: 14px;
+  }
+  .neoprene h3 {
+    font-size: 16px;
+  }
+  .neoprene div p {
+    font-size: 14px;
+  }
+  .neoprene .neoprene-season {
+    width: 90%;
+    border: 2px solid red;
+  }
+  .neoprene .neoprene-season h4 {
+    font-size: 16px;
+  }
+  .neoprene .neoprene-season p {
+    font-size: 14px;
+  }
+  .neoprene .suit {
+    margin: 10px;
+    width: 90%;
+  }
+  .neoprene .neoprene-zip h3 {
+    margin: 0.3em;
+  }
+  .neoprene .neoprene-zip p {
+    margin: 0.3em;
+    font-size: 14px;
+  }
+  .neoprene .neoprene-zip h4 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .neoprene .zip {
+    margin: 10px;
+    width: 90%;
   }
   .accesories .accesories-container .accesories-card {
     width: 100%;
@@ -1051,7 +1186,7 @@ h1 {
   }
   .accesories .accesories-container .accesories-card .p-container p {
     margin: 2px;
-    font-size: 16px;
+    font-size: 14px;
   }
   /* Escuelas */
   .schools {
