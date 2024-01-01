@@ -104,12 +104,12 @@
         margin: 1em;
     }
     div{
-        border:2px solid blue;
         width:80%;
         @include flex(column,center,center);
         p{
             margin: 1em;
             font-size:1.1em;
+            text-align:justify;
         }
     }
 
@@ -119,19 +119,20 @@
 
     div{
         p{
+            text-align:justify;
             margin: 1em;
             font-size:1.1em;
         }
     }
 .neoprene-season{
     width:80%;
-    border: 2px solid red;
     h4{
         margin:5px;
         text-indent:5px;
         text-decoration: underline;
     }
     p{
+        text-align:justify;
         margin: 1em;
         font-size:1.1em;
     }
@@ -150,6 +151,7 @@
         p{
             margin: 1em;
             font-size:1.1em;
+            text-align:justify;
         }
 
         h4{
