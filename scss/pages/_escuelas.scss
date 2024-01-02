@@ -113,6 +113,12 @@
     .school-link{
         text-align: center;
         font-size: 1.5em;
+
+        &:hover{
+            background-image: linear-gradient(to right,rgb(0,168,100),rgb(61, 4, 100));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
 
@@ -122,9 +128,38 @@
     align-items: center;
     gap:0.9em;
 
+    h2{
+        text-align: center;
+    }
+    div{
+        width:80%;
+        p{
+            text-align: justify;
+        }
+    }
+
     .borja-video{
         width:560px;
         height:315px;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        a{
+            transition:0.4s;
+            margin: 4px;
+            padding: 3px;
+            border:2px solid transparent;
+S
+            &:hover {
+                border:2px solid rgb(216, 223, 19);
+                border-radius: 25px;
+                color:rgb(216, 223, 19);
+                background-color:rgb(30, 53, 180);
+                transition:0.4s;
+            }
+        }
     }
 
 

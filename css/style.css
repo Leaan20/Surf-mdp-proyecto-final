@@ -408,6 +408,11 @@ h1 {
   text-align: center;
   font-size: 1.5em;
 }
+.school-link-container .school-link:hover {
+  background-image: linear-gradient(to right, rgb(0, 168, 100), rgb(61, 4, 100));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .borja-channel {
   display: flex;
@@ -415,9 +420,35 @@ h1 {
   align-items: center;
   gap: 0.9em;
 }
+.borja-channel h2 {
+  text-align: center;
+}
+.borja-channel div {
+  width: 80%;
+}
+.borja-channel div p {
+  text-align: justify;
+}
 .borja-channel .borja-video {
   width: 560px;
   height: 315px;
+}
+.borja-channel div {
+  display: flex;
+  justify-content: center;
+}
+.borja-channel div a {
+  transition: 0.4s;
+  margin: 4px;
+  padding: 3px;
+  border: 2px solid transparent;
+}
+S .borja-channel div a:hover {
+  border: 2px solid rgb(216, 223, 19);
+  border-radius: 25px;
+  color: rgb(216, 223, 19);
+  background-color: rgb(30, 53, 180);
+  transition: 0.4s;
 }
 
 /*-------------------------EQUIPO-----------------------*/
