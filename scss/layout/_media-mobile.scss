@@ -105,10 +105,7 @@ header {
     .beach{
 
         .beach-container{
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
+            @include flex (column,center,center);
 
             .beach-card{
                 width: 15rem;
@@ -358,9 +355,7 @@ header {
     }
 
      .form{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (row,center,center);
         margin:10%;
 
      .form-container{

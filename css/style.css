@@ -1300,6 +1300,7 @@ S .borja-channel div a:hover {
   }
   .form {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10%;
