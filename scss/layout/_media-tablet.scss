@@ -140,6 +140,12 @@ header {
 
     /* Playas */
 
+    .beach-p-container{
+        p{
+            text-align: justify;
+        }
+    }
+
     .beach{
 
         .beach-container{
@@ -313,6 +319,10 @@ header {
     /* Contacto */
 
 /*Estilo de la pagina contacto*/
+
+.form-p{
+    font-size: 1em;
+}
 
 .form{
     @include flex(column,center,center);

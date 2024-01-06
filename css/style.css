@@ -256,19 +256,15 @@ h1 {
   width: 100%;
   height: 12rem;
   object-fit: cover;
-  transition-duration: 0.5s;
-}
-.beach .beach-container .beach-card img:hover {
-  scale: 1.1;
-  transition-duration: 0.9s;
 }
 .beach .beach-container .beach-card div h3 {
   text-align: center;
-  color: #000;
+  color: #025;
 }
 .beach .beach-container .beach-card div p {
-  text-align: center;
+  text-align: justify;
   padding: 4px;
+  margin: 2px;
 }
 
 .camera {
@@ -309,6 +305,7 @@ h1 {
 /* Estilos de imagenes y textos seccion school*/
 .school-text-intro {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
@@ -326,7 +323,7 @@ h1 {
 }
 .schools h2 {
   margin: 0.5em;
-  color: #000;
+  color: #036;
 }
 .schools p {
   margin: 0.5em;
@@ -400,6 +397,7 @@ h1 {
 
 .school-link-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 0.4rem;
@@ -845,6 +843,9 @@ S .borja-channel div a:hover {
     font-size: 1em;
   }
   /* Playas */
+  .beach-p-container p {
+    text-align: justify;
+  }
   .beach .beach-container .beach-card {
     width: 15rem;
     height: 20.3rem;
@@ -965,6 +966,9 @@ S .borja-channel div a:hover {
   }
   /* Contacto */
   /*Estilo de la pagina contacto*/
+  .form-p {
+    font-size: 1em;
+  }
   .form {
     display: flex;
     flex-direction: column;
@@ -1134,7 +1138,7 @@ S .borja-channel div a:hover {
     height: 21.2rem;
   }
   .beach .beach-container .beach-card div h3 {
-    font-size: 15px;
+    font-size: 16.5px;
   }
   .beach .beach-container .beach-card div p {
     font: size 12.6px;
@@ -1187,7 +1191,7 @@ S .borja-channel div a:hover {
   .neoprene .suit {
     margin: 10px;
     width: 90%;
-    height: 140px;
+    height: 165px;
   }
   .neoprene .neoprene-zip h3 {
     margin: 0.3em;
@@ -1203,10 +1207,10 @@ S .borja-channel div a:hover {
   .neoprene .zip {
     margin: 10px;
     width: 90%;
-    height: 120px;
+    height: 170px;
   }
   .accesories .accesories-container .accesories-card {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     display: inline-block;
     text-align: center;
@@ -1260,14 +1264,17 @@ S .borja-channel div a:hover {
   .schools .surf-school .school-container .gallery .img-school1 {
     width: 11rem;
     height: 11rem;
+    transition-duration: 0.5s;
   }
   .schools .surf-school .school-container .gallery .img-school2 {
     width: 11rem;
     height: 11rem;
+    transition-duration: 0.5s;
   }
   .schools .surf-school .school-container .gallery .img-school3 {
     width: 11rem;
     height: 11rem;
+    transition-duration: 0.5s;
   }
   .schools .surf-school .school-container .gallery .expand:hover {
     width: 13rem;
@@ -1288,6 +1295,9 @@ S .borja-channel div a:hover {
     height: 160px;
   }
   /* Contacto */
+  .form-p {
+    font-size: 0.8em;
+  }
   .form {
     display: flex;
     justify-content: center;

@@ -10,9 +10,8 @@
 
 // tamaño img en seccion escuelas
 
-@mixin img-grid {
-    width:15rem;
-    height:15rem;
-    transition-duration:0.5s;
+@mixin img-grid ($width,$height,$transition-d){
+    width: $width;
+    height: $height;
+    transition-duration:$transition-d;
 }
-

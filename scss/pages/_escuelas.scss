@@ -5,9 +5,7 @@
 /* Estilos de imagenes y textos seccion school*/
 
 .school-text-intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (row,center,center);
     margin-bottom: 0;
     div{
         width:80%;
@@ -24,7 +22,7 @@
     margin: 1em;
     h2{
         margin:0.5em;
-        color:#000;
+        color:#036;
     }
 
     p{
@@ -40,10 +38,7 @@
             margin:0;
 
             .school-parag{
-                display: flex;
-                flex-direction: column;
-                justify-content:center;
-                align-items: center;
+                @include flex (column,center,center);
                 width:45%;
                 margin:0.8rem;
                 padding:3px;
@@ -69,7 +64,7 @@
                 margin:10px;
 
                 .img-school1 {
-                    @include img-grid;
+                    @include img-grid (15rem,15rem,0.5s);
                     grid-area: img1;
                     object-fit: cover;
                     align-self:center;
@@ -77,13 +72,13 @@
                 }
 
                 .img-school2 {
-                    @include img-grid;
+                    @include img-grid (15rem,15rem,0.5s);
                     grid-area:img2;
                     object-fit: cover;
                 }
 
                 .img-school3 {
-                    @include img-grid;
+                    @include img-grid (15rem,15rem,0.5s);
                     grid-area:img3;
                     object-fit: cover;
 
@@ -106,9 +101,7 @@
 }
 
 .school-link-container{
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    @include flex (row,center,center);
     margin: 0.4rem;
     .school-link{
         text-align: center;
@@ -161,6 +154,5 @@ S
             }
         }
     }
-
 
 }

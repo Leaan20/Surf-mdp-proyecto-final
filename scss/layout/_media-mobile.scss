@@ -101,6 +101,7 @@ header {
 
     /* Playas */
 
+
     .beach{
 
         .beach-container{
@@ -115,7 +116,7 @@ header {
 
                 div{
                     h3{
-                        font-size:15px;
+                        font-size:16.5px;
                     }
                     p{
                         font: size 12.6px;
@@ -210,7 +211,7 @@ header {
             .suit{
                 margin:10px;
                 width: 90%;
-                height:140px;
+                height:165px;
             }
         
             .neoprene-zip{
@@ -232,7 +233,7 @@ header {
             .zip{
                 margin:10px;
                 width: 90%;
-                height: 120px;
+                height: 170px;
             }
 
 
@@ -244,7 +245,7 @@ header {
         .accesories-container{
     
             .accesories-card{
-                width:100%;
+                width:80%;
                 overflow: hidden;
                 display: inline-block;
                 text-align: center;
@@ -310,18 +311,15 @@ header {
                     gap:0.5em;
                     margin:0px;
                     .img-school1 {
-                        width:11rem;
-                        height:11rem;
+                        @include img-grid(11rem,11rem,0.5s);
                     }
     
                     .img-school2 {
-                        width:11rem;
-                        height:11rem;
+                        @include img-grid(11rem,11rem,0.5s);
                     }
     
                     .img-school3 {
-                        width:11rem;
-                        height:11rem;
+                        @include img-grid(11rem,11rem,0.5s);
                     }
     
                     .expand:hover{
@@ -354,6 +352,11 @@ header {
     }
 
      /* Contacto */
+
+    .form-p{
+        font-size: 0.8em;
+    }
+
      .form{
         display:flex;
         justify-content: center;
@@ -390,8 +393,6 @@ header {
         p{
             font-size: 13px;
         }
-
-
     }
 }
 
